@@ -68,7 +68,7 @@ function uploadBudgetItem() {
                     // clear all items you stored
                     budgetObjectStore.clear();
 
-                    alert('All saved pizza has been submitted');
+                    alert('Connection detected and budget items have been submitted');
                 })
                 .catch(err => {
                     console.log(err);
