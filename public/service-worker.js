@@ -18,7 +18,7 @@ self.addEventListener('install', function (e) {
             return cache.addAll(FILES_TO_CACHE)
         })
     )
-    self.skipWaiting();
+    // self.skipWaiting();
 });
 
 // activate service worker
