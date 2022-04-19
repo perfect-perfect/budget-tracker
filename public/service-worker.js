@@ -3,11 +3,13 @@ const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION;
 
 const FILES_TO_CACHE = [
+    "/",
     "/index.html",
     "/manifest.json",
-    "/css/style.css",
+    "/css/styles.css",
     "/js/idb.js",
     "/js/index.js"
+    
 ]
 
 // install service worker
@@ -18,7 +20,7 @@ self.addEventListener('install', function (e) {
             return cache.addAll(FILES_TO_CACHE)
         })
     )
-    // self.skipWaiting();
+    self.skipWaiting();
 });
 
 // activate service worker
